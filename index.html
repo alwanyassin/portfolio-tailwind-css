@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Tailwind CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link href="dist/output.css" rel="stylesheet" />
     <script>
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -16,7 +19,7 @@
   </head>
   <body>
     <!-- Header Start -->
-    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+    <header class="absolute top-0 left-0 z-40 flex w-full items-center bg-transparent">
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-4">
@@ -73,16 +76,32 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36 dark:bg-dark bg-hero-pattern h-screen w-screen">
+    <section id="home" class="dark:bg-dark h-screen w-screen">
       <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2 bg-slate-400">
-            <h1 class="text-base font-semibold text-primary md:text-xl">Testing <span class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Sandhika Galih</span></h1>
-            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Lecturer & <span class="text-dark dark:text-white">Content Creator</span></h2>
-            <p class="mb-10 font-medium leading-relaxed text-secondary">Belajar web programming itu mudah dan menyenangkan bukan. <span class="font-bold text-dark dark:text-white">bukan!</span></p>
-
-            <a href="#" class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Hubungi Saya</a>
+        <div class="flex flex-wrap h-screen">
+          <div class="absolute animate-fade animate-duration-[3000ms] w-full self-center text-center m-auto px-4 lg:w-1/2 z-30">
+            <h1 class="animate-fade-down animate-duration-1000 animate-delay-[3000ms] animate-reverse text-7xl font-semibold text-white md:text-xl">Living in Style</h1>
           </div>
+          <!-- start carousel -->
+          <div id="default-carousel" class="w-screen h-screen -z-10" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="h-screen w-screen">
+                <!-- Item 1 -->
+                <div class="hidden duration-[1000ms] ease-in-out" data-carousel-item>
+                    <img src="dist/img/bg_top2.jpg" class="absolute block h-screen w-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-[1000ms] ease-in-out" data-carousel-item>
+                    <img src="dist/img/bg_top.jpg" class="absolute block h-screen w-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute  bottom-0 z-50 -translate-x-1/2 left-1/2 space-x-3 rtl:space-x-reverse">
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                  <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                </div>
+            </div>
+          </div>
+          <!-- end carousel -->
         </div>
       </div>
     </section>
@@ -512,5 +531,6 @@
     <!-- Back to top End -->
 
     <script src="dist/js/script.js"></script>
+    <script src="node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>
