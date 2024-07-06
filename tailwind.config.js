@@ -17,9 +17,6 @@ module.exports = {
       screens: {
         '2xl': '1320px',
       },
-      backgroundImage: {
-        'hero-pattern': "url('/dist/img/bg_top.jpg')",
-      },
     },
   },
   plugins: [
