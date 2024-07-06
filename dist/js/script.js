@@ -52,3 +52,36 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 } else {
   darkToggle.checked = false;
 }
+
+// modal
+const images = [
+  { src: 'dist/img/cluster1detail.jpeg', title: 'Avarra' },
+  { src: 'dist/img/cluster2detail.jpeg', title: 'Avista' },
+  { src: 'dist/img/cluster3detail.jpeg', title: 'Avante' },
+  { src: 'dist/img/cluster4detail.jpeg', title: 'Avetra' }
+];
+
+let currentIndex = 0;
+
+function openModal(index) {
+  currentIndex = index;
+  document.getElementById('modalImage').src = images[currentIndex].src;
+  document.getElementById('modalTitle').innerText = images[currentIndex].title;
+  document.getElementById('modal').classList.add('active');
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('active');
+}
+
+function prevImage() {
+  currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+  document.getElementById('modalImage').src = images[currentIndex].src;
+  document.getElementById('modalTitle').innerText = images[currentIndex].title;
+}
+
+function nextImage() {
+  currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+  document.getElementById('modalImage').src = images[currentIndex].src;
+  document.getElementById('modalTitle').innerText = images[currentIndex].title;
+}

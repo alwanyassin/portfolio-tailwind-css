@@ -30,3 +30,122 @@ body {
 #dark-toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3;
 }
+
+.swiper-wrapper {
+  width: 100%;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+  }
+  .swiper-pagination-bullet {
+  background: #4f46e5;
+  }
+
+  .w-275 {
+    width: 275px;
+  }
+  .h-275 {
+    height: 275px;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 50;
+  }
+  .modal.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-content {
+    position: relative;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .modal-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .prev-button {
+    left: 0;
+  }
+  .next-button {
+    right: 0;
+  }
+  .modal-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+  }
+  .modal-title {
+    text-align: center;
+  }
+  .close-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+      /* New CSS for centering images */
+      .image-gallery {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+      }
+      .image-container {
+        scroll-snap-align: center;
+        position: relative;
+        margin-right: 12px; /* Adjust spacing between images */
+      }
