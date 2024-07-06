@@ -1920,6 +1920,14 @@ input:checked + .toggle-bg {
   padding-bottom: 2.5rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .text-center {
   text-align: center;
 }
