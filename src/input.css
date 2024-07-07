@@ -17,6 +17,7 @@ body {
 
 .hamburger-active > span:nth-child(1) {
   @apply rotate-45;
+  @apply translate-x-1.5;
 }
 
 .hamburger-active > span:nth-child(2) {
@@ -25,6 +26,7 @@ body {
 
 .hamburger-active > span:nth-child(3) {
   @apply -rotate-45;
+  @apply translate-x-1.5;
 }
 
 #dark-toggle:checked ~ label div.toggle-circle {
@@ -39,7 +41,7 @@ body {
   position: relative;
 }
   .swiper-pagination-bullet {
-  background: #4f46e5;
+  background: #14b8a6;
   }
 
   .w-275 {
@@ -241,3 +243,9 @@ body {
         border-radius: 5px;
         cursor: pointer;
       }
+/* untuk animasi */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}

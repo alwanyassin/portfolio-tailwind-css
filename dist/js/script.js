@@ -1,3 +1,28 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const observerOptions = {
+    threshold: 0.1 // Adjust as needed
+  };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        console.log(`Element ${entry.target.id} is intersecting`);
+        entry.target.classList.add('animate-fade');
+        observer.unobserve(entry.target);
+      } else {
+        console.log(`Element ${entry.target.id} is not intersecting`);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  document.querySelectorAll('#animate1').forEach(element => {
+    observer.observe(element);
+    console.log(`Observing element ${element.id}`);
+  });
+});
+
 // Navbar Fixed
 window.onscroll = function () {
   const header = document.querySelector('header');
