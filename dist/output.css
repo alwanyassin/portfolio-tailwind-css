@@ -1246,6 +1246,14 @@ input:checked + .toggle-bg {
   margin-top: -4rem;
 }
 
+.-mt-\[96px\] {
+  margin-top: -96px;
+}
+
+.-mt-\[128px\] {
+  margin-top: -128px;
+}
+
 .block {
   display: block;
 }
