@@ -41,7 +41,7 @@ body {
   position: relative;
 }
   .swiper-pagination-bullet {
-  background: #14b8a6;
+  background: #349B68;
   }
 
   .w-275 {
@@ -178,6 +178,12 @@ body {
         background-size: cover;
         background-position: center;
         height: 400px;
+        position: relative;
+      }
+      .background-div2 {
+        background-image: url('img/emery.jpg');
+        background-size: cover;
+        background-position: center;
         position: relative;
       }
       .overlays {

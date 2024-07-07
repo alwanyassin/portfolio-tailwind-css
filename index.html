@@ -26,7 +26,9 @@
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-4">
-            <a href="#home" class="block py-6 text-lg font-bold text-slate-800">Logo</a>
+            <a href="#home" class="block py-3 text-lg font-bold text-slate-800">
+              <img src="dist/img/logo.png" class="h-14" alt="">
+            </a>
           </div>
           <div class="flex items-center px-4">
             <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden bg-primary rounded px-[7px] py-1">
@@ -50,7 +52,7 @@
                   <a href="#cluster" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Cluster</a>
                 </li>
                 <li class="group">
-                  <a href="#facilities" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Facilities</a>
+                  <a href="#tenant" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Tenant</a>
                 </li>
                 <li class="group">
                   <a href="#news" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">News & Event</a>
@@ -85,24 +87,25 @@
     <section id="home" class="dark:bg-dark h-screen w-screen">
         <div class="flex flex-wrap h-screen">
           <div class="absolute animate-fade animate-duration-[3000ms] w-full self-center text-center m-auto px-4 lg:w-1/2 z-30">
-            <h1 class="animate-fade-down animate-duration-1000 animate-delay-[3000ms] animate-reverse text-7xl font-semibold text-white md:text-xl">Living in Style</h1>
+            <!-- <h1 class="animate-fade-down animate-duration-1000 animate-delay-[3000ms] animate-reverse text-7xl font-semibold text-white md:text-xl">Living in Style</h1> -->
+            <h1 class="text-5xl font-semibold text-white md:text-xl">Student House <br>At naragiya cluster</h1>
           </div>
           <div class="w-full h-screen relative">
             <div class="swiper !h-screen default-carousel swiper-container">
               <div class="swiper-wrapper h-screen">
                 <div class="swiper-slide">
                   <div class="bg-indigo-50 rounded-2xl h-screen flex justify-center items-center">
-                    <img src="dist/img/bg_top.jpg" class="absolute h-screen w-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="dist/img/header.jpg" class="absolute h-screen w-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50" alt="...">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="bg-indigo-50 rounded-2xl h-screen flex justify-center items-center">
-                    <img src="dist/img/bg_top2.jpg" class="absolute h-screen w-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="dist/img/bg_top2.jpg" class="absolute h-screen w-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50" alt="...">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="bg-indigo-50 rounded-2xl h-screen flex justify-center items-center">
-                    <img src="dist/img/bg_top3.jpg" class="absolute h-screen w-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    <img src="dist/img/bg_top3.jpg" class="absolute h-screen w-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50" alt="...">
                   </div>
                 </div>
               </div>
@@ -114,63 +117,67 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-24 pb-32 dark:bg-slate-800">
+    <section id="about" class="pt-24 pb-32 dark:bg-slate-800 bg-slate-100">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-2xl font-semibold text-primary" id="animate1">Millenial Homes! Rp 700 Juta-An</h4>
-            <hr class="w-20 h-1 bg-white mx-auto" id="animate1">
-            <p class="text-md font-medium text-slate-400 md:text-lg mt-6" id="animate1">Introducing our latest type with stylish, modern, and contemporary flair! Millenial Homes offers the most stylish and affordable living in Karawang, featuring premium clubhouse facilities.</p>
+            <h4 class="mb-2 text-2xl font-semibold text-primary" id="animate1">About Student House</h4>
+            <hr class="w-20 h-1 bg-slate-900 mx-auto" id="animate1">
+            <p class="text-md font-medium text-slate-800 md:text-lg mt-6" id="animate1">Podomoro Park hadirkan Student House yang dapat Anda manfaatkan untuk berinvestasi dengan keuntungan yang sangat berlimpah.
+              Kawasan residensial eksklusif yang berada di Bandung Selatan dan di kelilingi oleh 3 Universitas ternama seperti Satu University by BINUS yang akan hadir di dalam kawasan Podomoro Park, tak hanya itu, kawasan Podomoro Park juga hanya 2 menit ke Telkom University dan juga Sekolah Tinggi Pariwisata NHI. Hal ini membuat investasi Student House sangat menguntungkan!
+              </p>
           </div>
         </div>
         <form>
             <div class="w-full px-4">
-              <button class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg" id="animate1">Request Brochure</button>
+              <a href="#home" class="block py-6 text-lg font-bold text-slate-800">
+                <img src="dist/img/doublelogo.png" class="h-20 mx-auto" alt="">
+              </a>
             </div>
         </form>
     </section>
     <!-- About Section End -->
 
     <!-- Banner Section Start -->
-    <section id="banner" class="bg-slate-500">
+    <!-- <section id="banner" class="bg-slate-500">
       <div id="animate1">
         <img src="dist/img/banner.jpg">
       </div>
-    </section>
+    </section> -->
     <!-- Banner Section End -->
 
     <!-- Cluster Section Start -->
-    <section id="cluster" class="pt-24">
+    <section id="cluster" class="pt-24 background-div2 h-[600px]">
       <div class="container">
         <div class="mx-auto mb-16 max-w-xl text-center">
-          <h4 class="text-2xl font-semibold text-primary" id="animate1">Cluster</h4>
-          <hr class="w-20 h-1 bg-slate-800 mx-auto" id="animate1">
+          <h4 class="text-2xl font-semibold text-white" id="animate1">Emery</h4>
+          <h4 class="pt-2 text-2xl font-semibold text-white" id="animate1">5x14 | 5x15 | 5x18</h4>
         </div>
         <div class="flex overflow-x-auto space-x-4 justify-center" id="animate1">
           <div class="image-gallery">
-            <div class="flex-none relative image-container">
-              <img src="dist/img/cluster1.jpg" alt="Image 1" class="w-275 h-275 object-cover rounded-md">
+            <div class="flex-none relative image-container shadow-2xl">
+              <img src="dist/img/emery.jpg" alt="Image 1" class="w-275 h-275 object-cover rounded-md">
               <div class="overlay rounded-md">
-                <button class="bg-transparent px-4 py-2 text-white border-solid border-2 border-primary rounded" onclick="openModal(0)">Avarra</button>
+                <button class="bg-transparent px-4 py-2 text-white border-solid border-2 border-primary rounded" onclick="openModal(0)">5x14</button>
               </div>
             </div>
-            <div class="flex-none relative image-container">
-              <img src="dist/img/cluster2.jpg" alt="Image 2" class="w-275 h-275 object-cover rounded-md">
+            <div class="flex-none relative image-container shadow-2xl">
+              <img src="dist/img/emery.jpg" alt="Image 2" class="w-275 h-275 object-cover rounded-md">
               <div class="overlay rounded-md">
-                <button class="bg-transparent px-4 py-2 text-white border-solid border-2 border-primary rounded" onclick="openModal(1)">Avista</button>
+                <button class="bg-transparent px-4 py-2 text-white border-solid border-2 border-primary rounded" onclick="openModal(1)">5x15</button>
               </div>
             </div>
-            <div class="flex-none relative image-container">
-              <img src="dist/img/cluster3.jpg" alt="Image 3" class="w-275 h-275 object-cover rounded-md">
+            <div class="flex-none relative image-container shadow-2xl">
+              <img src="dist/img/emery.jpg" alt="Image 3" class="w-275 h-275 object-cover rounded-md">
               <div class="overlay rounded-md">
-                <button class="bg-transparent px-4 py-2 text-white border-solid border-2 border-primary rounded" onclick="openModal(2)">Avante</button>
+                <button class="bg-transparent px-4 py-2 text-white border-solid border-2 border-primary rounded" onclick="openModal(2)">5x18</button>
               </div>
             </div>
-            <div class="flex-none relative image-container">
+            <!-- <div class="flex-none relative image-container">
               <img src="dist/img/cluster4.jpg" alt="Image 4" class="w-275 h-275 object-cover rounded-md">
               <div class="overlay rounded-md">
                 <button class="bg-transparent px-4 py-2 text-white border-solid border-2 border-primary rounded" onclick="openModal(3)">Avetra</button>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -203,56 +210,115 @@
     </section>
     <!-- Cluster Section End -->
 
-    <!-- Facilities Section Start -->
-    <section id="facilities" class="pt-24">
+    <!-- Tenant Section Start -->
+    <section id="tenant" class="pt-24 bg-slate-800">
         <div class="mx-auto mb-16 max-w-xl text-center" id="animate1">
-          <h4 class="text-2xl font-semibold text-primary">Facilities</h4>
-          <hr class="w-20 h-1 bg-slate-800 mx-auto">
+          <h4 class="text-2xl font-semibold text-primary">Tenant</h4>
+          <hr class="w-20 h-1 bg-slate-200 mx-auto">
+        </div>
+        <div class="w-full px-4 pb-10">
+          <div class="flex flex-wrap items-center justify-center">
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/alazhar.png" alt="alazhar" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/bpjs.png" alt="bpjs" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/binus.png" alt="binus" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/indomaret.png" alt="indomaret" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/living plaza.png" alt="living" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/mcdonalds2.png" alt="mcd" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/primaya.png" alt="primaya" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/starbucks2.png" alt="starbucks" />
+            </a>
+            <a href="#" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+              <img src="dist/img/clients/talaga.png" alt="talaga" />
+            </a>
+          </div>
         </div>
       <!-- Carousel Utama -->
-      <div class="swiper-container main-carousel !w-full !h-[250px] overflow-x-hidden" id="animate1">
+      <div class="swiper-container main-carousel !w-full overflow-x-hidden" id="animate1">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="dist/img/facilities1.jpg" alt="Slide 1">
-            <div class="text-center p-2 bg-gray-800 text-white">Dekat Dengan Premium Clubhouse</div>
+            <img src="dist/img/alazhar.jpg" alt="Slide 1">
+            <div class="text-center p-2 bg-gray-800 text-white">Al Azhar School & Mosque</div>
           </div>
           <div class="swiper-slide">
-            <img src="dist/img/facilities2.jpg" alt="Slide 2">
-            <div class="text-center p-2 bg-gray-800 text-white">Badminton Court</div>
+            <img src="dist/img/bpjs.jpg" alt="Slide 2">
+            <div class="text-center p-2 bg-gray-800 text-white">BPJS Ketenagakerjaan</div>
           </div>
           <div class="swiper-slide">
-            <img src="dist/img/facilities3.jpg" alt="Slide 3">
-            <div class="text-center p-2 bg-gray-800 text-white">Lounge</div>
+            <img src="dist/img/indomaret.jpg" alt="Slide 3">
+            <div class="text-center p-2 bg-gray-800 text-white">Indomaret</div>
           </div>
           <div class="swiper-slide">
-            <img src="dist/img/facilities4.jpg" alt="Slide 4">
-            <div class="text-center p-2 bg-gray-800 text-white">Studio Fit</div>
+            <img src="dist/img/living-primaya.jpg" alt="Slide 4">
+            <div class="text-center p-2 bg-gray-800 text-white">Living Plaza & Primaya Hospital</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/mcd.jpg" alt="Slide 5">
+            <div class="text-center p-2 bg-gray-800 text-white">McDonald's</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/satu.jpg" alt="Slide 6">
+            <div class="text-center p-2 bg-gray-800 text-white">Satu University</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/starbucks.jpg" alt="Slide 7">
+            <div class="text-center p-2 bg-gray-800 text-white">Starbucks</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/talaga.jpg" alt="Slide 8">
+            <div class="text-center p-2 bg-gray-800 text-white">Talaga Sampireun</div>
           </div>
           <!-- Tambahkan slide lainnya sesuai kebutuhan -->
         </div>
       </div>
   
       <!-- Thumbnail Navigasi -->
-      <div class="swiper-container swiper-thumb pt-10" id="animate1">
+      <div class="swiper-container swiper-thumb overflow-x-hidden" id="animate1">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="dist/img/facilities1.jpg" alt="Thumbnail 1">
+            <img src="dist/img/alazhar.jpg" alt="Thumbnail 1">
           </div>
           <div class="swiper-slide">
-            <img src="dist/img/facilities2.jpg" alt="Thumbnail 2">
+            <img src="dist/img/bpjs.jpg" alt="Thumbnail 2">
           </div>
           <div class="swiper-slide">
-            <img src="dist/img/facilities3.jpg" alt="Thumbnail 3">
+            <img src="dist/img/indomaret.jpg" alt="Thumbnail 3">
           </div>
           <div class="swiper-slide">
-            <img src="dist/img/facilities4.jpg" alt="Thumbnail 4">
+            <img src="dist/img/living-primaya.jpg" alt="Thumbnail 4">
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/mcd.jpg" alt="Thumbnail 5">
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/satu.jpg" alt="Thumbnail 6">
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/starbucks.jpg" alt="Thumbnail 7">
+          </div>
+          <div class="swiper-slide">
+            <img src="dist/img/talaga.jpg" alt="Thumbnail 8">
           </div>
           <!-- Tambahkan thumbnail lainnya sesuai kebutuhan -->
         </div>
       </div>
     </div>
     </section>
-    <!-- Facilities Section End -->
+    <!-- Tenant Section End -->
 
     <!-- Video Section Start -->
     <section id="video" class="pb-10">
@@ -387,8 +453,10 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
-            <h2 class="mb-5 text-4xl font-bold text-white">Logo</h2>
-            <h3 class="mb-2 text-2xl font-bold">Marketing Gallery</h3>
+            <a href="#home" class="block py-3 text-lg font-bold text-slate-800">
+              <img src="dist/img/logo.png" class="h-14" alt="">
+            </a>
+            <h3 class="mb-2 text-xl font-bold">Marketing Gallery</h3>
             <p>Jl. Tarumanagara, KM. 3 Arteri Tol Karawang Barat 1, Karawang 41361</p>
             <p>Jl. Tarumanagara Kav. 8, Arteri Tol Karawang Barat 1. Karawang 41361</p>
             <p><a href="tel:+62267 845 09 88">+62267 845 09 88</a></p>
@@ -406,7 +474,7 @@
                 <a href="#cluster" class="mb-3 inline-block text-base hover:text-primary">Cluster</a>
               </li>
               <li>
-                <a href="#facilities" class="mb-3 inline-block text-base hover:text-primary">Facilities</a>
+                <a href="#tenant" class="mb-3 inline-block text-base hover:text-primary">Tenant</a>
               </li>
               <li>
                 <a href="#news" class="mb-3 inline-block text-base hover:text-primary">News & Event</a>

@@ -80,10 +80,9 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 
 // modal
 const images = [
-  { src: 'dist/img/cluster1detail.jpeg', title: 'Avarra' },
-  { src: 'dist/img/cluster2detail.jpeg', title: 'Avista' },
-  { src: 'dist/img/cluster3detail.jpeg', title: 'Avante' },
-  { src: 'dist/img/cluster4detail.jpeg', title: 'Avetra' }
+  { src: 'dist/img/denah.png', title: '5x12 - 146m2' },
+  { src: 'dist/img/denah.png', title: '5x15 - 156m2' },
+  { src: 'dist/img/denah.png', title: '5x18 - 166m2' }
 ];
 
 let currentIndex = 0;
