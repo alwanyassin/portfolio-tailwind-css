@@ -13,6 +13,7 @@ module.exports = {
         primary: '#349B68',
         secondary: '#64748b',
         dark: '#0f172a',
+        navcolor: '#A17C6B',
       },
       screens: {
         '2xl': '1320px',

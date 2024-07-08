@@ -155,16 +155,18 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display: block;
+        justify-content: center;
       }
       .swiper-thumb {
         display: flex;
         justify-content: center;
         gap: 4px; /* Jarak antara thumbnail */
-        margin-top: 8px; /* Atur jarak antara carousel dan thumbnail */
+        /*margin-top: 8px; /* Atur jarak antara carousel dan thumbnail */
       }
       .swiper-thumb img {
-        width: 100px; /* Ukuran thumbnail */
-        height: 60px; /* Ukuran thumbnail */
+        /*width: 100px; /* Ukuran thumbnail */
+        /*height: 60px; /* Ukuran thumbnail */
         object-fit: cover;
         cursor: pointer;
         border: 2px solid transparent;
