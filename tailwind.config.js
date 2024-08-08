@@ -1,27 +1,26 @@
 module.exports = {
-  content: ['index.html',
-    './node_modules/flowbite/**/*.js'
-  ],
-  darkMode: 'class',
+  content: ["index.html", "./node_modules/flowbite/**/*.js"],
+  darkMode: "class",
   theme: {
     container: {
       center: true,
-      padding: '16px',
+      padding: "16px",
     },
     extend: {
       colors: {
-        primary: '#349B68',
-        secondary: '#64748b',
-        dark: '#0f172a',
-        navcolor: '#A17C6B',
+        primary: "#349B68",
+        secondary: "#64748b",
+        dark: "#0f172a",
+        navcolor: "#A17C6B",
       },
       screens: {
-        '2xl': '1320px',
+        "2xl": "1320px",
+      },
+      fontFamily: {
+        carla: ["HeadCustomFont"],
+        josephin: ["Josefin Sans", "sans-serif"],
       },
     },
   },
-  plugins: [
-    require('tailwindcss-animated'),
-    require('flowbite/plugin')
-  ],
+  plugins: [require("tailwindcss-animated"), require("flowbite/plugin")],
 };
