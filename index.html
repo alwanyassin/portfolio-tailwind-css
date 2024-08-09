@@ -399,7 +399,7 @@
             </div>
           </div> -->
         <!-- Carousel Utama -->
-        <div class="swiper-container main-carousel !w-full overflow-x-hidden" id="animate1">
+        <div class="swiper-container main-carousel2 !w-full overflow-x-hidden" id="animate1">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="dist/img/facilites/1ch.jpg" alt="Slide 1">
@@ -449,7 +449,7 @@
         </div>
     
         <!-- Thumbnail Navigasi -->
-        <div class="swiper-container swiper-thumb overflow-x-hidden" id="animate1">
+        <div class="swiper-container swiper-thumb2 overflow-x-hidden" id="animate1">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="dist/img/facilites/1ch.jpg" alt="Thumbnail 1">
@@ -754,6 +754,37 @@
         },
         thumbs: {
           swiper: swiperThumb
+        }
+      });
+
+      // Inisialisasi swiper untuk thumbnail
+      var swiperThumb2 = new Swiper('.swiper-thumb2', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+
+      // Inisialisasi swiper untuk carousel utama
+      var mainCarousel = new Swiper('.main-carousel2', {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 1,
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+          swiper: swiperThumb2
         }
       });
     </script>
